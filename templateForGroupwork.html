@@ -4,53 +4,95 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css">
         <title>Computing is Good!</title>
     </head>
 
     <!--
-        Currently very rough, there's a few comments talking about stuff. I can implement the bootstrap in a rough sense, unless someone else wants to do it.
+        Here's the template. Someone should go into the bootstrap.css file and actually make things look nice. I'm bad with aesthetics, plus it means we have more variety in what people are doing.
     -->
+
     <body>
-        <h1>Artificial Intelligence in --INSERT FIELD HERE--</h1>
+        <div class="mt-4 p-5 bg-primary text-white rounded text-center" >
+            <!--
+                Based on code from: https://www.w3schools.com/bootstrap5/bootstrap_jumbotron.php for emulating the old bootstrap feature of a jumbotron in Bootstrap 5
+            -->
 
-        <p>Paragraph giving a brief description of --HOW AI CAN HELP IN FIELD--</p>
+            <h1>Artificial Intelligence in --INSERT FIELD HERE--</h1>
 
-        <h2>Here are some various uses of artificial intelligence technology in --INSERT FIELD HERE--</h2>
+            <p>Paragraph giving a brief description of --HOW AI CAN HELP IN FIELD--</p>
+            
+        </div>
 
-        <!-- Image here? I'll include the code for it in this comment:
-         <img src="" alt="" width="" height="">
-         Probably can do some fancy bootstrap stuff, storing it in a container so we can modify it. I'll raise an issue to Jude to have the bootstrap implemented here, so I can use <div> stuff and containers and make it mobile friendly and such.
-        -->
+        <div class="text-center">
+            <h2>Here are some various uses of artificial intelligence technology in --INSERT FIELD HERE--</h2>
 
-        <dl>
-            <dt>FIRST USE IN FIELD</dt>
-            <dd>Description on how AI is used in the case above</dd>
-            <dt>SECOND USE IN FIELD</dt>
-            <dd>Description on how AI is used in the case above</dd>
-            <dt>THIRD USE IN FIELD</dt>
-            <dd>Description on how AI is used in the case above</dd>
-        </dl>
-        
-        <h2>Further reading:</h2>
-        <!--
-            Here is an example of the link thing, put the web links in the href="".
-            If you need more, just copy the below.
-            If you need less, just delete some of the below.
-        -->
-        <ul>
-            <li><a href="">REFERENCE 1</a></li>
-            <li><a href="">REFERENCE 2</a></li>
-            <li><a href="">REFERENCE 3</a></li>
-        </ul>
+            <!-- Image here? I'll include the code for it in this comment:
+                <div class="container">
+                    <div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
+                        <img src="" alt="" class="img-fluid">
+                    </div>
+                </div>
 
-        <h2>Author Information</h2>
-        <p>NAME is a... </p>
-        <!--
-            Put links to your GitHub and (if applicable) LinkedIn below, between the speech marks.
-        -->
-        <p><a href="">GitHub</a></p>
-        <p><a href="">LinkedIn</a></p>
+                Just put the image in the same file as the html page. Haven't tested the code, but should work. Got it from https://stackoverflow.com/questions/16466240/adjusting-and-image-size-to-fit-a-div-with-bootstrap
+            -->
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4 text-center">
+                    <h3>USAGE 1</h3>
+                    <p>Explanation</p>
+                </div>
+
+                <div class="col-sm-4 text-center">
+                    <h3>USAGE 2</h3>
+                    <p>Explanation</p>
+                </div>
+
+                <div class="col-sm-4 text-center">
+                    <h3>USAGE 3</h3>
+                    <p>Explanation</p>
+                </div>
+
+            </div>
+
+            <!--
+                Code taken and modified from https://www.w3schools.com/bootstrap/ . The code creates a container that stores a row of 3 columns that divide the page into 3 sections.
+            -->
+            
+        </div>
+
+        <div class="text-center">
+
+            <h2>Further reading:</h2>
+            <!--
+                Here is an example of the link thing, put the web links in the href="".
+                If you need more, just copy the below.
+                If you need less, just delete some of the below.
+            -->
+            <ul>
+                <li><a href="">REFERENCE 1</a></li>
+                <li><a href="">REFERENCE 2</a></li>
+                <li><a href="">REFERENCE 3</a></li>
+            </ul>
+            <!--
+                Atm, the bullet points of the unordered list need moving to centre with the text. This can be done with the css. If anyone else can do that, that'd be grand. Ty.
+            -->
+
+        </div>
+
+        <div class="bg-secondary"> <!-- The colour for secondary needs to change. To do this, go into the bootstrap, pick the colour you want using the hex thing, then set the bg-secondary-rgb to the equivalent RGB values-->
+            <h2>Author Information</h2>
+            <p>NAME is a... </p>
+            <!--
+                Put links to your GitHub and (if applicable) LinkedIn below, between the speech marks.
+            -->
+            <p><a href="">GitHub</a></p>
+            <p><a href="">LinkedIn</a></p>
+        </div>
 
     </body>
 
