@@ -10,76 +10,64 @@
     </head>
 
     <body>
-       
-        <div class="mt-4 p-5 bg-primary text-white rounded text-center" >
-            <h1>Artificial Intelligence in games</h1>
-            <p>The ability of an AI to play games has been used as a metric of progress in the field. Since Deep Blue's historic victory against Garry Kasparov in 1997, AIs have cemented their dominance and expanded further into other games such as Go. These succeses will be talked about in this page</p>
-        </div>
-
-        <div class="p-5 text-black">
-            <h1><u>Deepblue</u></h1>
-            <p1>In 1996 Garry Kasparov fought IBM's Deep Blue computer in a six-game match game of chess, winning 4-2. After being upgraded, Kasparov was defeated in a rematch in 1997, making it the first time a computer defeated a world champion in a match of chess.</p1>
-            <img source="" alt="">
-        </div>
-
-        <div class="text-center">
-            <h2>Here are some various uses of artificial intelligence technology in --INSERT FIELD HERE--</h2>
-
-            <!-- Image here? I'll include the code for it in this comment:
-                <div class="container">
-                    <div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
-                        <img src="" alt="" class="img-fluid">
-                    </div>
-                </div>
-
-                Just put the image in the same file as the html page. Haven't tested the code, but should work. Got it from https://stackoverflow.com/questions/16466240/adjusting-and-image-size-to-fit-a-div-with-bootstrap
-            -->
-
-        </div>
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-4 text-center">
-                    <h3>USAGE 1</h3>
-                    <p>Explanation</p>
-                </div>
-
-                <div class="col-sm-4 text-center">
-                    <h3>USAGE 2</h3>
-                    <p>Explanation</p>
-                </div>
-
-                <div class="col-sm-4 text-center">
-                    <h3>USAGE 3</h3>
-                    <p>Explanation</p>
-                </div>
-
-            </div>
-
-            <!--
-                Code taken and modified from https://www.w3schools.com/bootstrap/ . The code creates a container that stores a row of 3 columns that divide the page into 3 sections.
-            -->
+        
+        <div class="p-5 bg-primary text-white text-center" style="
+        background-image: url('assets/JudeBackground.webp'); height: 30vh; background-size: cover;">
+            <h1>AI in games</h1>
+            <p1>The ability of AI to solve games has been used as a benchmark of progress in the field since it's infancy.
+                From Garry Kasparov's historic defeat by Deep Blue to Alpha Zero's conquest of Go, find out how AI has evolved in the field.
+            </p1>
             
         </div>
-
-        <div class="text-center">
-
-            <h2>Further reading:</h2>
-            <!--
-                Here is an example of the link thing, put the web links in the href="".
-                If you need more, just copy the below.
-                If you need less, just delete some of the below.
-            -->
-            <ul>
-                <li><a href="">REFERENCE 1</a></li>
-                <li><a href="">REFERENCE 2</a></li>
-                <li><a href="">REFERENCE 3</a></li>
-            </ul>
-            <!--
-                Atm, the bullet points of the unordered list need moving to centre with the text. This can be done with the css. If anyone else can do that, that'd be grand. Ty.
-            -->
-
+        <div class="container.fluid py-4 px-4">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1><u>Deep Blue</u></h1>
+                    <p1>In 1996 Garry Kasparov fought IBM's Deep Blue computer in a six-game match game of chess, winning 4-2. 
+                        After being upgraded, Kasparov was defeated in a rematch in 1997, making it the first time a computer 
+                        defeated a world champion in a match of chess. 
+                        Deep Blue didn't use machine learning and rather relied on a hand-crafted algorithm, an opening book and 
+                        some specialist hardware. Compared to modern AIs this is a very primative system, as it has no capability to 
+                        learn on it's own.
+                    </p1>
+                </div>
+                <div class="col-sm-4">
+                    <img src="assets/KasparovVsDeepblue.webp" class="img-fluid" alt="Kasparov playing chess against Deep Blue">
+                </div>
+            </div>
+        </div>
+        <div class="container.fluid py-4 px-4">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="assets/KeJieVsAlphaZero.webp" class="img-fluid" alt="Kasparov playing chess against Deep Blue">
+                </div>
+                <div class="col-sm-8">
+                    <h1><u>AlphaGo</u></h1>
+                    <p1>In May 2017, AlphaGo won against world champion Ki Jie 3-0. Go is a lot more complicated than chess due to
+                        a much larger number of possible moves and states, so many researchers thought that it would take a longer 
+                        until AI would master Go. DeepMind's AlphaGo broke those expectations by training a neural network on the games 
+                        of masters and by playing it against itself. Unlike Deep Blue, this AI used deep learning to improve from training
+                        without any modification to it's code being needed.
+                    </p1>
+                </div>
+            </div>
+        </div>
+        <div class="container.fluid py-4 px-4">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1><u>Alpha Zero and Mu Zero</u></h1>
+                    <p1>Following on from AlphaGo, Alpha Zero could play chess, shogi and go. Not only was this AI more general, it also no
+                        longer relied on knowledge learnt from human games as it was completely self taught. This was made possible thanks to
+                        advances made in hardware and algorithms used. After just 9 hours of self play, Alpha Zero was capable of defeating
+                        stockfish version 8. Taking this one step further in a paper in 2019, Mu Zero was not told the rules of the games of
+                        which it was learning to play. Alpha Zero could only play games where there are 2 players with only a win, draw and lose 
+                        condition. However, Mu Zero doesn't have this restriction and was also learnt how to play a standard suite of Atari games.
+                    </p1>
+                </div>
+                <div class="col-sm-4">
+                    <img src="assets/Mu Zero.png" class="img-fluid" alt="Kasparov playing chess against Deep Blue">
+                </div>
+            </div>
         </div>
     
         <div class="bg-secondary"> <!-- The colour for secondary needs to change. To do this, go into the bootstrap, pick the colour you want using the hex thing, then set the bg-secondary-rgb to the equivalent RGB values-->
